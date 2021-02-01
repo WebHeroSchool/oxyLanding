@@ -17,10 +17,10 @@
   position: absolute;
   padding-left: 18px;
   padding-top: 6px;
+  z-index: 2;
 }
 
 .header__logo_img2 {
-  z-index: 2;
   position: relative;
   padding-right: 17px;
   margin-left: 11px;
@@ -97,6 +97,7 @@ h2 {
   width: 455px;
   margin-bottom: 43px;
 }
+
 .main__button {
   outline: none;
   background-color: #0056ec ;
@@ -320,4 +321,5 @@ h2 {
     width: 209px;
     height: 44px;
   }
+
 }
