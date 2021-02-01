@@ -56,6 +56,10 @@
   display: none;
 }
 
+label {
+  display: none;
+}
+
 .header__burger_burger, .header__burger_cross  {
   display: none;
 }
@@ -106,7 +110,7 @@ h2 {
   line-height: 21.09px;
 }
 
-@media (max-width: 1367px){
+@media (max-width: 1500px){
 
   .header {
     margin-left: 200px;
@@ -217,6 +221,10 @@ h2 {
 }
 
 @media (max-width: 685px) {
+
+  label {
+    display: block;
+  }
 
   .header__links {
     display: none;
