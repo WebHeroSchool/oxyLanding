@@ -236,18 +236,25 @@ h2 {
     background-color: #fff;
   }
 
+  #checkbox_id:checked ~ .header__logo {
+    display: none;
+  }
+  
   #checkbox_id:checked ~ .header__links {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-size: 30px;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
   }
 
-  #checkbox_id:checked ~ label > .header__burger_burger {
+  #checkbox_id:checked ~ label > .header__burger > .header__burger_burger {
     display: none;
   }
 
-  #checkbox_id:checked ~ label > .header__burger_cross {
+  #checkbox_id:checked ~ label > .header__burger > .header__burger_cross {
     display: flex;  
    }
   
