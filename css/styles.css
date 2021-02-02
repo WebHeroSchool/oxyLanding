@@ -253,6 +253,7 @@ h2 {
     background: #fff;
     z-index: 1;
     top: 0;
+    left:0;
   }
 
   #checkbox_id:checked ~ label > .header__burger > .header__burger_burger {
