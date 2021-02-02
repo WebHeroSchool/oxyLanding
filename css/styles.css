@@ -249,6 +249,10 @@ h2 {
     width: 100vw;
     height: 100vh;
     align-items: center;
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    top: 0;
   }
 
   #checkbox_id:checked ~ label > .header__burger > .header__burger_burger {
@@ -256,7 +260,11 @@ h2 {
   }
 
   #checkbox_id:checked ~ label > .header__burger > .header__burger_cross {
-    display: flex;  
+    display: flex; 
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    z-index: 2; 
    }
   
 }
