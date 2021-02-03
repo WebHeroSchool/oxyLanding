@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 38px;
   margin-bottom: 24px;
   width: 80.36%;
   padding-left: 9.3%;
@@ -39,17 +39,20 @@
   line-height: 21.09px;
   justify-content: space-between;
   width: 24.5%;
+  color: #000;
+  padding-top: 9px;
 }
 
 .header__link {
   text-decoration: none;
   cursor: pointer;
+  border-bottom: 2px solid;
+  padding-bottom: 4px;
+  border-color: #fff;
 }
 
 .header__link:hover {
-  color: #0056ec;
-  border-bottom: 2px solid;
-  padding-bottom: 9px;
+  border-color: #0056ec;  
 }
 
 #checkbox_id {
@@ -66,11 +69,12 @@ label {
 
 .main {
   background-image: url(../images/Frame.png);
-  background-position: 83% 80%;
+  background-position: 83% 78%;
   background-repeat: no-repeat;
   background-size: 40%;
   padding-top: 9%;
   padding-bottom: 9%;
+  margin-bottom: 4.5%;
 }
 
 h1 {
@@ -86,16 +90,16 @@ h2 {
 }
 
 .main__wrap {
-  width: 567px;
+  width: 30%;
   margin-left: 10%;
 }
 .main__title {
-  margin-bottom: 37px;
+  margin-bottom: 6.5%;
 }
 
 .main__description {
-  width: 455px;
-  margin-bottom: 43px;
+  width: 75%;
+  margin-bottom: 8%;
 }
 
 .main__button {
@@ -111,10 +115,16 @@ h2 {
   line-height: 21.09px;
 }
 
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 1500px){
 
   .header {
-    margin-left: 200px;
+    margin-left: 14.6%;
     width: 69.3%;
     padding-left: 0;
   }
@@ -129,18 +139,23 @@ h2 {
     width: 33.5%;
   }
 
+  .header__link {
+    padding-bottom: 1px;
+  }
+
   .main {
     background-size: 38%;
-    background-position: 75% 98%;
+    background-position: 75% 97%;
     padding-top: 6%;
     padding-bottom: 17%;
     margin-top: 0;
+    margin-bottom: 5.5%;
   }
 
   .main__wrap {
-    width: 434px;
-    height: 195px;
-    margin-left: 210px;
+    width: 31%;
+    height: 26vh;
+    margin-left: 15.5%;
   }
 
   h1 {
@@ -154,12 +169,12 @@ h2 {
   }
   
   .main__title {
-    margin-bottom: 40px;
+    margin-bottom: 10%;
   }
 
   .main__description {
-    width: 367px;
-    margin-bottom: 43px;
+    width: 83%;
+    margin-bottom: 11%;
   }
 
   .main__button {
@@ -173,8 +188,8 @@ h2 {
 @media (max-width: 1025px){
 
   .header {
-    margin-left: 26px;
-    width: 94%;
+    margin-left: 2.5%;
+    width: 93.5%;
     margin-bottom: 0;
   }
 
@@ -186,11 +201,14 @@ h2 {
   }
 
   .main__wrap {
+    width: 39%;
+    height: 36vh;
     margin-left: 38px;
   } 
 
   .main__description {
-    margin-bottom: 36px;
+    width: 97%;
+    margin-bottom: 10%;
   }
 
 }
@@ -206,18 +224,19 @@ h2 {
     background-size: 65%;
     background-position: 50% 0%;
     text-align: center;
- }
+  }
 
  
- .main__wrap {
-   margin-left: 22%;
-   margin-top: 43%;
-   text-align: center;
- }
+  .main__wrap {
+    width: 56%;
+    margin-left: 24%;
+    margin-top: 43%;
+    text-align: center;
+  }
 
-.main__description {
-  margin-left: 8%;
-}
+  footer {
+    display: none;
+  }
 
 }
 
