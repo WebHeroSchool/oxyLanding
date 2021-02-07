@@ -63,7 +63,7 @@ label {
   display: none;
 }
 
-.header__burger_burger, .header__burger_cross  {
+.header__burger {
   display: none;
 }
 
@@ -96,6 +96,10 @@ h2 {
 }
 .main__title {
   margin-bottom: 6.5%;
+}
+ 
+.fill {
+  background: #ecf3ff;
 }
 
 .main__description {
@@ -251,20 +255,54 @@ footer{
     display: none;
   }
 
-  .header__burger_burger {
-    display: inline;
-    border-style: none;
-    background-color: #fff;
+  .header__burger {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 17px;
+    cursor: pointer;
   }
+
+  .burger__line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #0056EC;
+    top: 7px;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #0056EC;
+    position: absolute;
+    transition: .3s ease;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  } 
 
   #checkbox_id:checked ~ .header__logo {
     display: none;
   }
-  
+   
+  #checkbox_id:checked ~ {
+
+  }
+
+
   #checkbox_id:checked ~ .header__links {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 30px;
     width: 100vw;
     height: 100vh;
@@ -276,18 +314,26 @@ footer{
     left:0;
   }
 
-  #checkbox_id:checked ~ label > .header__burger > .header__burger_burger {
+  #checkbox_id:checked ~ .header__links > .header__link {
+    margin-bottom: 13%;
+  }
+
+  #checkbox_id:checked ~ label > .header__burger > .header__line {
     display: none;
   }
 
-  #checkbox_id:checked ~ label > .header__burger > .header__burger_cross {
-    display: flex; 
-    position: absolute;
-    top: 3%;
-    right: 5%;
-    z-index: 2; 
-   }
+  #checkbox_id:checked ~ label > .header__burger::before {
+    top: 7px;
+    transform: rotate(45deg); 
+    z-index: 2;  
+  }
   
+  #checkbox_id:checked ~ label > .header__burger::after {
+    top: 7px;
+    transform: rotate(-45deg);
+    z-index: 2;
+  }
+
 }
 
 @media (max-width: 376px) {
@@ -296,22 +342,12 @@ footer{
     margin-top: 7%;
     margin-bottom: 10%;
     justify-content: space-between;
-    width: 92%;
+    width: 94%;
     margin-left: 7px;
-   }
-
-   .header__logo_img1,.header__logo_img2 {
-    width: 28px;
-    height: 28px;
    }
 
   .header__logo_name {
     display: none;
-  }
-
-  .header__burger {
-    width: 25px;
-    height: 17px;
   }
 
   .main {
@@ -340,8 +376,8 @@ footer{
   }
 
   .main__description {
-    margin-left: 0%;
-    width: 275px;
+    margin-left: 3%;
+    width: 254px;
     margin-bottom: 28px;
   }
 
