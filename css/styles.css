@@ -52,7 +52,8 @@
 }
 
 .header__link:hover {
-  border-color: #0056ec;  
+  border-color: #0056ec;
+  opacity: 0.5;  
 }
 
 #checkbox_id {
@@ -99,7 +100,7 @@ h2 {
 }
  
 .fill {
-  background: #ecf3ff;
+  background: linear-gradient(180deg, #fff, #ecf3ff);
 }
 
 .main__description {
@@ -118,6 +119,15 @@ h2 {
   font-family: 'Roboto-Medium';
   font-size: 18px;
   line-height: 21.09px;
+}
+
+.main__button:hover {
+  opacity: 0.5;
+}
+
+.main__button:active {
+  background-color: #c8dbfb;
+  color: #0056ec;
 }
 
 footer{
@@ -332,6 +342,12 @@ footer{
     top: 7px;
     transform: rotate(-45deg);
     z-index: 2;
+  }
+
+  #checkbox_id:checked ~ label {
+    position: absolute;
+    top: 31px;
+    right: 7%;
   }
 
 }
